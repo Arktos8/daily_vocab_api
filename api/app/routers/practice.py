@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.models import Word, PracticeSession
-from app.schemas import ValidateSentenceRequest, ValidateSentenceResponse
-from app.utils import mock_ai_validation
+from .database import get_db
+from .models import Word, PracticeSession
+from .schemas import ValidateSentenceRequest, ValidateSentenceResponse
+from .utils import mock_ai_validation
 
 router = APIRouter()
 

@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 import random
 
-from app.models import Word
-from app.schemas import WordResponse
+from .models import Word
+from .schemas import WordResponse
 
 router = APIRouter()
 
